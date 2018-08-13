@@ -3,4 +3,30 @@
   //src: url('../font/icons.woff2') format('woff2'),
   //url('../font/icons.woff') format('woff');
 }
-
+
+@font-face {
+  font-family:'Montserrat';
+  src: url('../font/Montserrat Bold.eot');
+  src: url('../font/Montserrat Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/Montserrat Bold.woff2') format('woff2'),
+  url('../font/Montserrat Bold.woff') format('woff'),
+  url('../font/Montserrat Bold.svg#Montserrat Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family:'Montserrat';
+  src: url('../font/Montserrat Regular.eot');
+  src: url('../font/Montserrat Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/Montserrat Regular.woff2') format('woff2'),
+  url('../font/Montserrat Regular.woff') format('woff'),
+  url('../font/Montserrat Regular.svg#Montserrat Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
