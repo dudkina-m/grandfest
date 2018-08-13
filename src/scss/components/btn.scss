@@ -1,0 +1,47 @@
+@import '../global';
+
+.btn {
+  @include transition();
+
+  border: 1px solid #d82121;
+  font-weight: 500;
+  height: 36px;
+  width: 100%;
+
+  &:not(button) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &:hover {
+    background-color: #d82121;
+  }
+
+  &:active {
+    background-color: #b31b1b;
+    border-color: #b31b1b;
+  }
+
+  &__promo {
+    @include transition();
+    display: flex;
+    height: 60px;
+    background: url("/img/promo.svg") no-repeat left center;
+    align-items: center;
+    max-width: 230px;
+    padding-left: 72px;
+    line-height: 18px;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &_size {
+
+    &_big {
+      height: 60px;
+    }
+  }
+}

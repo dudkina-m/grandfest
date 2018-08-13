@@ -1,0 +1,61 @@
+@import '../global';
+
+.top-panel {
+  height: 720px;
+  position: relative;
+  width: 100%;
+
+  &__header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .83) 70.69%);
+    height: 170px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
+    .header {
+      height: max-content;
+      margin-top: 36px;
+    }
+  }
+
+  &__slider {
+    height: 100%;
+    width: 100%;
+
+    .slick-list, .slick-track, .slick-slide, .slick-slide > div {
+      height: 100%;
+    }
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      bottom: 125px;
+      max-width: 1140px;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .slick-active {
+        button {
+          opacity: 1;
+        }
+      }
+
+      li {
+        margin-right: 18px;
+
+        button {
+          border: 0;
+          color: transparent;
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          background-color: #d82121;
+          opacity: .35;
+        }
+      }
+    }
+  }
+}

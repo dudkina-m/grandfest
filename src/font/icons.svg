@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="icons" horiz-adv-x="20">
+    <font-face font-family="icons"
+      units-per-em="20" ascent="20"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="nav-telegram"
+      unicode="&#xEA01;"
+      horiz-adv-x="20" d=" M1 19H19V1H1V19z M9.99989 1.0001C14.9704 1.0001 18.9998 5.0295 18.9998 10C18.9998 14.9705 14.9704 18.99989 9.99989 18.99989C5.02939 18.99989 1 14.9705 1 10C1 5.0295 5.02939 1.0001 9.99989 1.0001z M8.12594 8.6887L12.1932 5.6179L14.2463 14.38187L3.75366 10.25457L6.94645 9.197L12.7733 13.10556L8.12594 8.6887z M9.44785 7.6907L7.82092 6.0504L8.12597 8.6887L9.44785 7.6907z" />
+  </font>
+</defs>
+</svg>

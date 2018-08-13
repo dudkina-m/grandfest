@@ -1,0 +1,37 @@
+@import '../global';
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 96px;
+  justify-content: space-between;
+  width: 100%;
+
+  &__contact {
+    align-items: center;
+    display: flex;
+
+    & .contact__item {
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__write-us {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      max-width: 154px;
+    }
+
+    label {
+      font-size: 11px;
+      margin-top: 6px;
+      opacity: .75;
+    }
+  }
+}

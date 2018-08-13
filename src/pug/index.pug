@@ -1,6 +1,8 @@
 extends root/layout
 
 block container
+    include include/header
     .container
-        p hello world
-        //include include/footer
+        ul
+            li
+                a.link(href="home.html") Главная

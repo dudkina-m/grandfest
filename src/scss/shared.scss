@@ -1,7 +1,8 @@
 @import 'global';
 
 body {
-  background: #121212;
+  background: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
@@ -17,7 +18,21 @@ body {
 
 .container {
   margin: 0 auto;
-  min-width: 320px;
   max-width: 1140px;
+  min-width: 320px;
   width: 100%;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 6px;
+  opacity: .5;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 55px;
 }

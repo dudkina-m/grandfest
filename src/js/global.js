@@ -1,6 +1,14 @@
 $(function () {
-  modalDisplay();
+  sliderInit();
 });
+
+function sliderInit() {
+    $(".top-panel__slider").slick({
+        autoplay: true,
+        arrows: false,
+        dots: true
+    });
+}
 
 function dropdownShow() {
     $(document).ready(function () {

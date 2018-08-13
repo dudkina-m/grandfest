@@ -1,0 +1,23 @@
+@import '../global';
+
+.nav-menu {
+  align-items: center;
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    @include transition();
+
+    color: rgba(255,255,255,.5);
+    font-weight: 600;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
