@@ -24,18 +24,21 @@
     height: 100%;
     width: 100%;
 
-    .slick-list, .slick-track, .slick-slide, .slick-slide > div {
+    .slick-list,
+    .slick-track,
+    .slick-slide,
+    .slick-slide > div {
       height: 100%;
     }
 
     .slick-dots {
-      position: absolute;
-      display: flex;
       bottom: 125px;
-      max-width: 1140px;
-      width: 100%;
+      display: flex;
       left: 50%;
+      max-width: 1140px;
+      position: absolute;
       transform: translateX(-50%);
+      width: 100%;
 
       .slick-active {
         button {
@@ -47,13 +50,13 @@
         margin-right: 18px;
 
         button {
-          border: 0;
-          color: transparent;
-          border-radius: 50%;
-          width: 12px;
-          height: 12px;
           background-color: #d82121;
+          border: 0;
+          border-radius: 50%;
+          color: transparent;
+          height: 12px;
           opacity: .35;
+          width: 12px;
         }
       }
     }

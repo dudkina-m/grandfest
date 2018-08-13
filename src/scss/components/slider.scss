@@ -9,28 +9,28 @@
   }
 
   &__content {
-    margin-top: 185px;
     display: flex;
     flex-direction: column;
+    margin-top: 185px;
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 20px;
-    max-width: 50%;
-    margin-top: 25px;
-    font-weight: 500;
     color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 25px;
+    max-width: 50%;
   }
 
   &__actions {
-    max-width: 50%;
-    margin-top: 35px;
     display: flex;
+    margin-top: 35px;
+    max-width: 50%;
 
     .btn {
-      max-width: 280px;
       margin-right: 24px;
+      max-width: 280px;
     }
   }
 }

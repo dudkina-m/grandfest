@@ -25,14 +25,20 @@ body {
 
 .subtitle {
   font-size: 12px;
+  letter-spacing: 6px;
   line-height: 24px;
   margin-bottom: 10px;
-  letter-spacing: 6px;
   opacity: .5;
   text-transform: uppercase;
 }
 
 .title {
-  font-weight: 700;
   font-size: 55px;
+  font-weight: 700;
+}
+
+.divider {
+  background-color: rgba(216, 33, 33, .3);
+  height: 1px;
+  width: 100%;
 }

@@ -1,0 +1,70 @@
+@import '../global';
+
+.leading-content {
+  background: url('/img/home-anna.png') no-repeat 8% center;
+  display: flex;
+  flex-direction: column;
+  min-height: 888px;
+  padding-top: 100px;
+
+  &__section {
+    padding: 0 !important;
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    padding-left: 195px;
+  }
+
+  &__title {
+    font-size: 115px;
+    margin-top: -20px;
+    text-align: right;
+  }
+
+  &__container {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 45px 0 0 auto;
+    max-width: 65%;
+  }
+
+  &__list {
+    border-left: 1px solid rgba(216, 33, 33, .2);
+    border-right: 1px solid rgba(216, 33, 33, .2);
+    height: 100%;
+    padding: 25px 0;
+    width: 50%;
+
+    &:not(:first-child) {
+      margin-left: 48px;
+    }
+  }
+
+  &__item {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: 45px;
+    }
+
+    &:before {
+      content: url('/img/arrow.svg');
+      left: -25px;
+      position: absolute;
+    }
+
+    p {
+      color: #808080;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: -.2px;
+      line-height: 15px;
+      margin-top: 15px;
+    }
+  }
+}

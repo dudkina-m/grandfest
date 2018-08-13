@@ -25,13 +25,14 @@
 
   &__promo {
     @include transition();
+
+    align-items: center;
+    background: url('/img/promo.svg') no-repeat left center;
     display: flex;
     height: 60px;
-    background: url("/img/promo.svg") no-repeat left center;
-    align-items: center;
+    line-height: 18px;
     max-width: 230px;
     padding-left: 72px;
-    line-height: 18px;
 
     &:hover {
       opacity: .7;
@@ -39,7 +40,6 @@
   }
 
   &_size {
-
     &_big {
       height: 60px;
     }
