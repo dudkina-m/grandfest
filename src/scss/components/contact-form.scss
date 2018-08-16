@@ -1,5 +1,36 @@
-@import "../global";
+@import '../global';
 
 .contact-form {
 
+  &__container {
+    display: flex;
+    margin-top: 30px;
+    font-size: 16px;
+
+    .grid {
+      margin: 30px -15px 0;
+
+      &__item {
+        padding: 0 15px 30px 15px;
+
+        &.centered {
+          margin: 0 auto;
+
+          .btn {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    .input {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+
+    p {
+      margin-top: 36px;
+    }
+  }
 }

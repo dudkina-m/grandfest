@@ -27,16 +27,16 @@
 
   &__item {
     background: no-repeat left top;
-    padding-left: 96px;
     margin-top: 30px;
     min-height: 102px;
+    padding-left: 96px;
 
     .heading {
-      height: 48px;
       color: #fff;
+      height: 48px;
     }
 
-    p:not([class="heading"]) {
+    p:not([class='heading']) {
       color: #808080;
       line-height: 18px;
       //letter-spacing: -0.2px;

@@ -8,7 +8,7 @@ block container
             - for (var i = 0; i < 5; i++) {
             .slider__item
                 .container
-                    .slider__content
+                    .slider__content(data-aos="fade-up")
                         span.subtitle студия праздника Анны Ефремовой
                         span.title Весёлые выпускные
                         p.slider__text Нет скучным свадьбам! Все, что скажет ваша бабушка про ненадкусанный каравай, будет сказано потом. Вместе создадим на свадьбе новые традиции, сделаем то, чего не было на торжествах родственников, устроим исключительно ваш день и ваш праздник! Пусть его оправдает даже самая консервативная бабушка ;)
@@ -23,18 +23,18 @@ block container
                 p.title.leading-content__title Анна Ефремова
                 .leading-content__container
                     ul.leading-content__list
-                        li.leading-content__item.heading Профессия
+                        li.leading-content__item.heading(data-aos="fade-right") Профессия
                             p Приход в event – сферу не случаен. Это не подработка и не увлечение, а профессия, которая требует знаний, сил, энергии и любви к тому, что делаешь. Анна - профессиональная телеведущая с опытом свыше 10 лет на ТВ, автор и режиссер собственных программ, инициатор успешных проектов.
-                        li.leading-content__item.heading Имя дороже денег
+                        li.leading-content__item.heading(data-aos="fade-right") Имя дороже денег
                             p Работа на результат. Каждый проект – это безупречная реализация, неповторимость и восторг.
-                        li.leading-content__item.heading Креатив
+                        li.leading-content__item.heading(data-aos="fade-right") Креатив
                             p В детстве Анна сочиняла стихи и писала сказки о принцах и принцессах. Сейчас все свои оригинальные идеи реализует в исключительных неповторимых мероприятиях.
                     ul.leading-content__list
-                        li.leading-content__item.heading Стиль
+                        li.leading-content__item.heading(data-aos="fade-left") Стиль
                             p Собственный неподражаемый стиль Ведения Мероприятий, в котором сочетаются динамика,  легкое интересное  общение и изящное чувство юмора.
-                        li.leading-content__item.heading Энергетика
+                        li.leading-content__item.heading(data-aos="fade-left") Энергетика
                             p Это не то, что ведущий говорит и не то, каким он кажется….это та атмосфера, которая создается в его присутствии. В компании с Анной  всегда  уютно, душевно, интересно и весело. А  гости с порога  чувствуют  себя долгожданными и желанными.
-                        li.leading-content__item.heading Подход
+                        li.leading-content__item.heading(data-aos="fade-left") Подход
                             p Одинаково ответственный подход к каждому мероприятию –  будь то корпоратив на 500 гостей и VIP-приглашенными   или День Рождения в кругу близких людей на 10 человек. Главный принцип каждого мероприятия – превосходить ожидания.
 
     section.section
@@ -44,23 +44,23 @@ block container
                 .divider
             .choose-content__container
                 ul.choose-content__list
-                    li.choose-content__item(style="background-image: url('img/microphone.svg')")
+                    li.choose-content__item(style="background-image: url('img/microphone.svg')" data-aos="fade-right")
                         p.heading Профессионал
                         p Телеведущая, журналист, инициатор собственных проектов
-                    li.choose-content__item(style="background-image: url('img/high-five.svg')")
+                    li.choose-content__item(style="background-image: url('img/high-five.svg')" data-aos="fade-right")
                         p.heading Находит общий язык с каждым
                         p ...на русском, английском и немецком языках
-                    li.choose-content__item(style="background-image: url('img/educate.svg')")
+                    li.choose-content__item(style="background-image: url('img/educate.svg')" data-aos="fade-right")
                         p.heading Учит и учится!
                         p Проводит тренинги по личностному росту. Регулярно посещает топовые конференции и семинары страны  в event-сфере
                 ul.choose-content__list
-                    li.choose-content__item(style="background-image: url('img/lips.svg')")
+                    li.choose-content__item(style="background-image: url('img/lips.svg')" data-aos="fade-left")
                         p.heading Мастер слова
                         p Филолог по образованию, богатый словарный запас , грамотная речь
-                    li.choose-content__item(style="background-image: url('img/mask.svg')")
+                    li.choose-content__item(style="background-image: url('img/mask.svg')" data-aos="fade-left")
                         p.heading С чувством юмора
                         p Шутит над ситуациями, а не над людьми. Табу на пошлые и вульгарные шутки
-                    li.choose-content__item(style="background-image: url('img/love.svg')")
+                    li.choose-content__item(style="background-image: url('img/love.svg')" data-aos="fade-left")
                         p.heading Ее особенность – искренность!
                         p Каждое Событие проживает  вместе с Вами. Высокая самоотдача на каждом Мероприятии.
 
@@ -76,13 +76,24 @@ block container
                 .grid
                     each item in ["Свадьба", "Корпоратив", "День рождения", "Новый год", "Выпускной", "PR-акция", "Презентация", "Тимбилдинг", "Деловое мероприятие", "Видео-ролики"]
                         .grid__item.grid__item_20
-                            .service-content__item
+                            a.service-content__item(href="#")
                                 span.service-content__item-title= item
                 .service-content__btn
                     a.btn.btn_size_big(href="#") Смотреть полный список услуг
 
     section.section(style="background-image: url('img/contact-bg.png')")
-        .container
+        .container(data-aos="fade-up")
             p.title.section__title.contact-content__title Свяжитесь с нами прямо сейчас,#[br] и Ваш праздник станет незабываемым.
             .contact-form__container
+                form.grid
+                    .grid__item.grid__item_40
+                        input.input(placeholder="Пожалуйста, представьтесь" style="background-image: url('img/user.svg')")
+                        input.input(placeholder="Номер телефона или e-mail*" style="background-image: url('img/phone.svg')")
+                        input.input(type="date" placeholder="Дата планируемого мероприятия" style="background-image: url('img/calendar.svg')")
+                    .grid__item.grid__item_60
+                        textarea.textarea(placeholder="По желанию, укажите повод мероприятия. Можете описать Ваши пожелания и любую другую информацию…")
+                        p Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
 
+                    .grid__item.grid__item_30.centered
+                        button.btn.btn_size_big.btn_solid Отправить заявку
+    include include/footer

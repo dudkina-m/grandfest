@@ -32,6 +32,7 @@ gulp.task('build-css', () => {
     gulp.src([
         `${sourceDirectory}css/reset.css`,
         `${nodeModulesDirectory}slick-carousel/slick/slick.css`,
+        `${nodeModulesDirectory}aos/dist/aos.css`,
     ]
     .concat(getPluginsPaths('css')))
     .pipe($.plumber())
@@ -58,6 +59,7 @@ gulp.task('build-js', () => {
         `${sourceDirectory}js/components/general/*.js`,
         `${sourceDirectory}js/components/*.js`,
         `${nodeModulesDirectory}slick-carousel/slick/slick.js`,
+        `${nodeModulesDirectory}aos/dist/aos.js`,
     ])
         .pipe($.plumber())
         .pipe($.concat('script.js'))

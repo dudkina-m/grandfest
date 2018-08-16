@@ -1,5 +1,6 @@
 $(function () {
   sliderInit();
+  AOS.init();
 });
 
 function sliderInit() {

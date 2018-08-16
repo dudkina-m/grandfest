@@ -29,23 +29,29 @@
   }
 
   &__item {
+    background: linear-gradient(207.95deg, rgba(0, 0, 0, .0001) 34.35%, rgba(0, 0, 0, .55) 70.4%) center no-repeat;
     height: 360px;
-    background: linear-gradient(207.95deg, rgba(0, 0, 0, 0.0001) 34.35%, rgba(0, 0, 0, 0.55) 70.4%) center no-repeat;
     position: relative;
+    display: block;
+    @include transition();
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &-title {
-      font-weight: 700;
-      font-size: 16px;
-      position: absolute;
       bottom: 22px;
+      font-size: 16px;
+      font-weight: 700;
       left: 24px;
+      position: absolute;
     }
   }
 
   &__btn {
     margin: 35px auto 0;
-    width: 100%;
     max-width: 400px;
+    width: 100%;
 
     .btn {
       font-size: 20px;

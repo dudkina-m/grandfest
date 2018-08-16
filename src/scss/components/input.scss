@@ -1,0 +1,49 @@
+@import "../global";
+
+.input {
+  height: 72px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 60px;
+  padding-right: 20px;
+  background: no-repeat 25px center;
+  border: 1px solid rgba(255,255,255,.25);
+  width: 100%;
+
+  &__calendar {
+    padding-right: 40px;
+
+    ::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+      color: #fff;
+    }
+
+    ::-ms-input-placeholder {
+      color: #fff;
+    }
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,.5);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255,255,255,.5);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255,255,255,.5);
+}
+
+.textarea {
+  @extend .input;
+  padding: 24px;
+  height: 168px;
+  resize: none;
+}
