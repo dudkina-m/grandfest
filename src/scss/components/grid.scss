@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px -12.5px 0;
+
+  &__item {
+    padding: 0 12.5px 25px 12.5px;
+
+    width: 50%;
+
+    &_25 {
+      width: 25%;
+    }
+
+    &_20 {
+      width: 20%;
+    }
+  }
+}

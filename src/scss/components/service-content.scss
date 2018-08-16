@@ -1,0 +1,54 @@
+@import '../global';
+
+.service-content {
+  &__section {
+    background: url('/img/oval-bg.png') center no-repeat;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    span {
+      white-space: nowrap;
+    }
+
+    .divider {
+      margin: 0 30px !important;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 40px;
+    padding: 0 12.5px;
+  }
+
+  &__item {
+    height: 360px;
+    background: linear-gradient(207.95deg, rgba(0, 0, 0, 0.0001) 34.35%, rgba(0, 0, 0, 0.55) 70.4%) center no-repeat;
+    position: relative;
+
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      position: absolute;
+      bottom: 22px;
+      left: 24px;
+    }
+  }
+
+  &__btn {
+    margin: 35px auto 0;
+    width: 100%;
+    max-width: 400px;
+
+    .btn {
+      font-size: 20px;
+    }
+  }
+}
