@@ -39,10 +39,18 @@
     }
   }
 
+  &__social {
+    background: no-repeat 20px center;
+  }
+
   &_size {
     &_big {
-      height: 60px;
       font-size: 20px;
+      height: 60px;
+    }
+
+    &_middle {
+      height: 48px;
     }
 
     &_small {
