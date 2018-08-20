@@ -2,3 +2,12 @@ extends root/layout
 
 block container
     include include/header
+    section.section.not-found__section(style="background-image: url('img/not-found-bg.png')")
+        .container(data-aos="fade-up")
+            .not-found__content
+                p.not-found__title Ошибка 404. Страница не найдена
+                p.section__desc.not-found__desc Возможно страницу удалили или переименовали. Может на главной странице будет то что надо?
+                a.btn.not-found__btn(href="#") Главная страница
+
+    include include/footer
+

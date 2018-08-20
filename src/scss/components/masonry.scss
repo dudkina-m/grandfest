@@ -1,0 +1,15 @@
+@import '../global';
+
+.masonry {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 1200px;
+  //margin-left: -10px;
+  width: 100%;
+}
+
+.masonry-brick {
+  background-color: #d82121;
+  margin: 60px 10px 0 0;
+  width: 25%;
+}

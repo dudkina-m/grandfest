@@ -1,7 +1,6 @@
-@import "../global";
+@import '../global';
 
 .contacts {
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -15,9 +14,9 @@
   }
 
   &__item {
-    line-height: 32px;
     display: flex;
     flex-direction: column;
+    line-height: 32px;
     margin-top: 24px;
     label {
       font-size: 13px;
@@ -37,8 +36,8 @@
   }
 
   &__phone {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-right: 3px;
 
     .contact__item {
@@ -47,12 +46,12 @@
   }
 
   &__map {
-    width: 55%;
     height: 600px;
+    width: 55%;
   }
 
   &__btn {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, .1);
   }
 
   &__socials-list {
@@ -61,8 +60,8 @@
     margin: 25px -12px 0;
 
     li {
-      width: 50%;
       padding: 0 6px 12px 6px;
+      width: 50%;
     }
   }
 }
