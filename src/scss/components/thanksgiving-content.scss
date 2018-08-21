@@ -1,0 +1,44 @@
+@import "../global";
+
+.thanksgiving-content {
+
+  &__section {
+    .grid {
+      margin: 40px -15px 0;
+
+      .grid__item {
+        padding: 0 15px 30px 15px;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    span {
+      white-space: nowrap;
+    }
+
+    .divider {
+      margin: 0 30px;
+    }
+
+    .btn {
+      max-width: 170px;
+      font-size: 14px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-height: 370px;
+    object-fit: contain;
+    cursor: pointer;
+    @include transition();
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -2,13 +2,19 @@ extends root/layout
 
 block container
     include include/header
-    .container
-        ul
-            li
-                a.link(href="home.html") 1. Главная
-            li
-                a.link(href="contacts.html") 7. Контакты
-            li
-                a.link(href="reviews.html") 8. Отзывы
-            li
-                a.link(href="not-found.html") 10. 404
+    section.section
+        .container
+            ul
+                li
+                    a.link(href="home.html") 1. Главная
+                li
+                    a.link(href="gallery.html") 5. Галерея
+                li
+                    a.link(href="contacts.html") 7. Контакты
+                li
+                    a.link(href="reviews.html") 8. Отзывы
+                li
+                    a.link(href="popup.html") 9. Всплывающее
+                li
+                    a.link(href="not-found.html") 10. 404
+    include include/footer

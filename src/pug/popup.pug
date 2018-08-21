@@ -1,0 +1,18 @@
+extends root/layout
+include mixins/popup
+block container
+    include include/header
+    section.section
+        .container
+            a.btn(href="#" data-popup="add-review") Добавить отзыв
+    include include/footer
+    .popup__container
+        +popup("add-review")
+            span.title.section__title.popup__title Напишите нам!
+            form.contact-form__container.popup__form
+                input.input(placeholder="Пожалуйста, представьтесь" style="background-image: url('img/user.svg')")
+                input.input(placeholder="Номер телефона или e-mail*" style="background-image: url('img/phone.svg')")
+                input.input(type="date" placeholder="Дата планируемого мероприятия" style="background-image: url('img/calendar.svg')")
+                textarea.textarea(placeholder="По желанию, укажите повод мероприятия. Можете описать Ваши пожелания и любую другую информацию…")
+                p.text Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+            a.btn.btn_size_big.btn_solid(href="#") Отправить заявку

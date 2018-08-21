@@ -1,0 +1,63 @@
+@import "../global";
+
+.popup {
+  background: #242424;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  left: 50%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 60px 90px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  z-index: 1000;
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    transition: all .3s ease;
+    width: 20px;
+    height: 20px;
+    background: url("/img/close.svg") no-repeat center;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__container {
+    background-color: rgba(0, 0, 0, .85);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__form {
+    flex-direction: column;
+
+    .textarea {
+      margin-top: 24px;
+    }
+
+    .text {
+      font-size: 13px;
+      line-height: 15px;
+      margin: 24px 0 38px;
+    }
+  }
+}

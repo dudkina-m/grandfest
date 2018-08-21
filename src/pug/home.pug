@@ -92,8 +92,42 @@ block container
                         input.input(type="date" placeholder="Дата планируемого мероприятия" style="background-image: url('img/calendar.svg')")
                     .grid__item.grid__item_60
                         textarea.textarea(placeholder="По желанию, укажите повод мероприятия. Можете описать Ваши пожелания и любую другую информацию…")
-                        p Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+                        p.text Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
 
                     .grid__item.grid__item_30.centered
                         button.btn.btn_size_big.btn_solid Отправить заявку
+
+    section.section.section_type_gradient.thanksgiving-content__section
+        .container(data-aos="fade-up")
+            p.subtitle.section__subtitle Признание - это…
+            .title.section__title.thanksgiving-content__title
+                span Благодарственные письма
+                .divider
+                a.btn(href="#") Оставить отзыв
+            .grid
+                - for (var i = 0; i < 4; i++) {
+                    .grid__item.grid__item_25
+                        img.thanksgiving-content__img(src="img/letter.png" alt="letter")
+                - }
+
+    section.section
+
+    section.section.section_type_gradient.partners-content__section
+        .container
+            p.subtitle Наши партнёры
+            .title.section__title.partners-content__title
+                .divider
+                span Нам доверяют
+                .divider
+    section.section
+        .container
+            .partners-content__slider
+                img(src="img/partner-1.png" alt)
+                img(src="img/partner-2.png" alt)
+                img(src="img/partner-3.png" alt)
+                img(src="img/partner-4.png" alt)
+                img(src="img/partner-1.png" alt)
+                img(src="img/partner-2.png" alt)
+                img(src="img/partner-3.png" alt)
+                img(src="img/partner-4.png" alt)
     include include/footer

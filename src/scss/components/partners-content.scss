@@ -1,0 +1,33 @@
+@import "../global";
+
+.partners-content {
+
+  &__section {
+    padding-bottom: 40px !important;
+
+    .subtitle {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      flex-wrap: nowrap;
+    }
+
+    .divider {
+      margin: 0 30px;
+      max-width: 100px;
+    }
+  }
+
+  &__slider {
+    display: flex !important;
+    align-items: center;
+    height: 192px;
+  }
+}
