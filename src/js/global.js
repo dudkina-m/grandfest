@@ -54,6 +54,35 @@ function sliderInit() {
             }
         ]
     });
+
+    $('.review-content__slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: $('.slider-prev'),
+        nextArrow: $('.slider-next'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $('.article__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false
+    });
 }
 
 function dropdownShow() {

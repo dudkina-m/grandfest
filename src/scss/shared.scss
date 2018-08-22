@@ -49,3 +49,26 @@ body {
   font-weight: 600;
   line-height: 24px;
 }
+
+.slider-arrow {
+  @include transition();
+
+  background: transparent no-repeat center;
+  border: 0;
+  height: 16px;
+  margin: 0 5px;
+  width: 16px;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.slider-next {
+  background-image: url('/img/slider-next.svg');
+}
+
+.slider-prev {
+  background-image: url('/img/slider-prev.svg');
+  margin-left: 25px;
+}

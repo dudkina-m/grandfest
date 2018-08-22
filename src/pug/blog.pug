@@ -1,0 +1,53 @@
+extends root/layout
+
+block container
+    include include/header
+
+    section.section.section_type_gradient.blog__section
+        .container(data-aos="fade-up")
+            .blog__container
+                .blog__content
+                    p.title.section__title Event-блог
+                    -for (var i = 0; i < 7; i++) {
+                    .blog__item
+                        img(src="img/blog-photo.png" alt="")
+                        .blog__item-content
+                            p.blog__item-title Как Собчак учила жизни минчан
+                            p.blog__item-date 20.07.2018
+                            p.blog__item-text Добрый вечер. Мы в восторге. Все было так, как мы в этот день представляли: сдержанно, со вкусом и при этом…
+                            a.blog__item-link(href="#") Читать далее...
+                    -}
+                    ul.pagination
+                        li
+                            a.pagination__btn.pagination__first(href="#") <<
+                        li
+                            a.pagination__btn.pagination__prev(href="#") <
+                        li
+                            a.pagination__btn(href="#") 1
+                        li
+                            a.pagination__btn.active(href="#") 2
+                        li
+                            a.pagination__btn(href="#") 3
+                        li
+                            a.pagination__btn(href="#") 4
+                        li
+                            a.pagination__btn(href="#") 5
+                        li
+                            a.pagination__btn.pagination__next(href="#") >
+                        li
+                            a.pagination__btn.pagination__last(href="#") >>
+                .aside.blog__aside
+                    p.aside__subtitle О блоге
+                    p.aside__text Наша стоимость держится в верхнем среднем ценовом диапазоне. Это связано с опытом работы, высоким профессионализмом и качеством мероприятий, подтвержденные рекомендациями топовых компаний Смоленска и отзывами любимых Клиентов.
+                    p.aside__text Выберите ценность своего Праздника.
+                    .input__group
+                        input.input(placeholder="Введите ваш е-mail")
+                        button.input__btn
+                            svg(width='19', height='11', viewBox='0 0 19 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                rect(width='19', height='11', fill='black', fill-opacity='0')
+                                path(d='M0.5 5.5H18.5', stroke='#D82121', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M14.5 0.5L18.5 5.5L14.5 10.5', stroke='#D82121', stroke-linecap='round', stroke-linejoin='round')
+                    p.aside__text Подписываясь на рассылку, вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+
+
+    include include/footer

@@ -1,0 +1,49 @@
+extends root/layout
+
+block container
+    include include/header
+
+    section.section.section_type_gradient.price-content__section
+        .container
+            .price-content__container
+                .aside.price-content__aside
+                    p.title.section__title Стоимость
+                    p.aside__text Стоимость наших услуг держится в верхнем среднем ценовом диапазоне. Это связано с опытом работы, высоким профессионализмом и качеством мероприятий, подтвержденные рекомендациями топовых компаний Смоленска и отзывами любимых Клиентов.
+                    p.aside__subtitle Гибкие тарифы
+                    p.aside__text Любой пакет может быть скорректирован по Вашим пожеланиям  и дополнен опциями:
+                    ul.aside__list
+                        li.aside__text • Организация под ключ
+                        li.aside__text • Оформление и декор
+                        li.aside__text • Торт
+                        li.aside__text • Полиграфия и сувенирная продукция
+                        li.aside__text • Видео-продакшн: корпорат. фильмы, видео-поздравления, клипы, рекламные и презентационные  ролики
+                    p.aside__text.bold Мы уважаем Ваш бюджет и предложим самый оптимальный вариант.
+                    a.btn.aside__btn(href="#") Написать нам
+
+                .price-content__table
+                    .price-content__table-row
+                        .price-content__table-cell
+                            p hello
+                        .price-content__table-cell
+                            p hello
+                        .price-content__table-cell
+                            p hello
+                        .price-content__table-cell
+                            p hello
+
+    section.section(style="background-image: url('img/contact-bg.png')")
+        .container(data-aos="fade-up")
+            p.title.section__title.contact-content__title Свяжитесь с нами прямо сейчас,#[br] и Ваш праздник станет незабываемым.
+            .contact-form__container
+                form.grid
+                    .grid__item.grid__item_40
+                        input.input(placeholder="Пожалуйста, представьтесь" style="background-image: url('img/user.svg')")
+                        input.input(placeholder="Номер телефона или e-mail*" style="background-image: url('img/phone.svg')")
+                        input.input(type="date" placeholder="Дата планируемого мероприятия" style="background-image: url('img/calendar.svg')")
+                    .grid__item.grid__item_60
+                        textarea.textarea(placeholder="По желанию, укажите повод мероприятия. Можете описать Ваши пожелания и любую другую информацию…")
+                        p Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+
+                    .grid__item.grid__item_30.centered
+                        button.btn.btn_size_big.btn_solid Отправить заявку
+    include include/footer

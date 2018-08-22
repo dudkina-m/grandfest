@@ -1,0 +1,52 @@
+@import '../global';
+
+.price-content {
+  &__section {
+    padding: 30px 0 95px !important;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__aside {
+    margin-right: 60px;
+    width: 235px;
+
+    .title {
+      margin-top: 0;
+    }
+  }
+
+  &__table {
+    background-color: #000;
+    border-collapse: collapse;
+    display: table;
+    margin-top: 20px;
+    width: 100%;
+
+    &-row {
+      display: table-row;
+
+      .price-content__table-cell {
+        &:last-child {
+          border: 0;
+        }
+      }
+
+      &:first-child {
+      }
+    }
+
+    &-cell {
+      border-right: 2px solid #212121;
+      display: table-cell;
+      padding: 30px;
+      width: 25%;
+    }
+
+    &-head {
+      width: 100%;
+    }
+  }
+}

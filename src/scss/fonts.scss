@@ -22,6 +22,34 @@
   font-family: 'Montserrat';
   font-stretch: normal;
   font-style: normal;
+  font-weight: 600;
+  src: url('../font/Montserrat SemiBold.eot');
+  src: url('../font/Montserrat SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../font/Montserrat SemiBold.woff2') format('woff2'),
+  url('../font/Montserrat SemiBold.woff') format('woff'),
+  url('../font/Montserrat SemiBold.svg#Montserrat SemiBold') format('svg');
+
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/Montserrat Medium.eot');
+  src: url('../font/Montserrat Medium.eot?#iefix') format('embedded-opentype'),
+  url('../font/Montserrat Medium.woff2') format('woff2'),
+  url('../font/Montserrat Medium.woff') format('woff'),
+  url('../font/Montserrat Medium.svg#Montserrat Medium') format('svg');
+
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-stretch: normal;
+  font-style: normal;
   font-weight: 400;
   src: url('../font/Montserrat Regular.eot');
   src: url('../font/Montserrat Regular.eot?#iefix') format('embedded-opentype'),

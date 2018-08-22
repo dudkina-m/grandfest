@@ -41,7 +41,7 @@
     background-color: #333;
     border-radius: 2px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     padding: 52px 24px 24px;
     position: relative;
@@ -92,6 +92,33 @@
 
     & + p {
       margin-top: 15px;
+    }
+  }
+}
+
+.review-content {
+  display: flex;
+  margin-top: 20px;
+
+  .review__container {
+    margin: 0 5px;
+  }
+
+  .blog__item-text {
+    max-height: 144px;
+  }
+
+  .blog__item-link {
+    margin-top: 24px;
+  }
+
+  &__slider {
+    .slick-list {
+      padding-top: 40px;
+    }
+
+    .slick-slide {
+      margin: 0 5px;
     }
   }
 }
