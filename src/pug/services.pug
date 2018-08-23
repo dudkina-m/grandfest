@@ -1,0 +1,61 @@
+extends root/layout
+
+block container
+    include include/header
+
+    section.section.section_type_gradient
+        .container(data-aos="fade-up")
+            p.subtitle.section__subtitle.service-content__subtitle Сделано с душой…
+            .title.section__title.service-content__title
+                .divider
+                span Услуги, которые мы предоставляем
+                .divider
+            p.section__desc Ваше Мероприятие – неповторимое и идеальное! #[br] Мы готовы предложить Вам проведение и/или организацию следующих событий:
+            .service-content__container
+                .grid
+                    each item in ["Свадьба", "Корпоратив", "День рождения", "Новый год", "Выпускной", "PR-акция", "Презентация", "Тимбилдинг", "Деловое мероприятие", "Видео-ролики", "Конференция","Открытие", "Бизнес-раут", "Розыгрыш", "Тест-драйв"]
+                        .grid__item.grid__item_20
+                            a.service-content__item(href="#")
+                                span.service-content__item-title= item
+                .services__btn
+                    a.btn.btn_size_big(href="#") Не нашли нужную услугу? Напишите нам!
+
+    section.section.services__process
+        .container(data-aos="fade-up")
+            p.subtitle Все просто и прозрачно!
+            p.title.section__title Как мы работаем?
+
+            .grid
+                .grid__item_20
+                    .process__header
+
+
+
+    section.section.section_type_gradient.services__reason
+        .container
+            .services__reason-content
+                img(src="img/services-anna.png" alt)
+                .services__reason-desc
+                    p.subtitle Вопрос, который волнует всех…
+                    p.title.section__title Есть ли смысл обращаться в Event-агентство ?
+                    ul
+                        li.about__facts-item Да, если вы хотите организовать Ваше мероприятие безупречно и восхитить Ваших гостей
+                        li.about__facts-item Да, если у Вас статусное мероприятие
+                        li.about__facts-item Да, если на мероприятии будет более 70 гостей
+
+    section.section(style="background-image: url('img/contact-bg.png')")
+        .container(data-aos="fade-up")
+            p.title.section__title.contact-content__title Свяжитесь с нами прямо сейчас,#[br] и Ваш праздник станет незабываемым.
+            .contact-form__container
+                form.grid
+                    .grid__item.grid__item_40
+                        input.input(placeholder="Пожалуйста, представьтесь" style="background-image: url('img/user.svg')")
+                        input.input(placeholder="Номер телефона или e-mail*" style="background-image: url('img/phone.svg')")
+                        input.input(type="date" placeholder="Дата планируемого мероприятия" style="background-image: url('img/calendar.svg')")
+                    .grid__item.grid__item_60
+                        textarea.textarea(placeholder="По желанию, укажите повод мероприятия. Можете описать Ваши пожелания и любую другую информацию…")
+                        p Нажимая на кнопку «отправить заявку», вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+
+                    .grid__item.grid__item_30.centered
+                        button.btn.btn_size_big.btn_solid Отправить заявку
+    include include/footer
