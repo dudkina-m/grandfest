@@ -89,6 +89,21 @@
   }
 
   &__process {
+    .grid__item {
+      position: relative;
 
+      .heading {
+        height: 72px;
+        margin-top: 20px;
+        display: block;
+      }
+    }
+  }
+
+  &__info {
+    padding: 50px 0;
+    .section__desc {
+      text-align: left;
+    }
   }
 }

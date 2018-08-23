@@ -7,6 +7,11 @@
   justify-content: space-between;
   width: 100%;
 
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+    background-color: #212121;
+  }
+
   &__contact {
     align-items: center;
     display: flex;
@@ -18,11 +23,19 @@
         margin-right: 12px;
       }
     }
+
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
   }
 
   &__write-us {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
 
     .btn {
       max-width: 154px;

@@ -5,20 +5,7 @@ block container
 
     section.section.section_type_gradient
         .container(data-aos="fade-up")
-            p.subtitle.section__subtitle.service-content__subtitle Сделано с душой…
-            .title.section__title.service-content__title
-                .divider
-                span Услуги, которые мы предоставляем
-                .divider
-            p.section__desc Ваше Мероприятие – неповторимое и идеальное! Мы готовы предложить Вам проведение и/или организацию следующих событий:
-            .service-content__container
-                .grid
-                    each item in ["Свадьба", "Корпоратив", "День рождения", "Новый год", "Выпускной", "PR-акция", "Презентация", "Тимбилдинг", "Деловое мероприятие", "Видео-ролики", "Конференция","Открытие", "Бизнес-раут", "Розыгрыш", "Тест-драйв"]
-                        .grid__item.grid__item_20
-                            a.service-content__item(href="#")
-                                span.service-content__item-title= item
-                .service-content__btn
-                    a.btn.btn_size_big(href="#") Не нашли нужную услугу? Напишите нам!
+
 
     section.section
         .container(data-aos="fade-up")
@@ -26,41 +13,83 @@ block container
 
     section.section.section_type_gradient
         .container(data-aos="fade-up")
-            .about__biography-content
-                img(src="img/biography-photo.png" alt)
-                .about__biography-desc
-                    p.title.section__title Краткая биография
-                    p.section__desc Вы уже поняли, что имеете дело с прогрессивным ведущим, который меняет не только гаджеты, но и подходы к ведению праздников? И это при том, что я в сфере шоу-бизнеса больше 10 лет , мог бы вполне себе занять тепленькое местечко и работать по сценарию 11-летней давности. Но мне повезло: во мне уживаются экспериментатор, непоседа, романтик и оптимист.
-                    p.section__desc И этих четыре человека знают, что нужно делать ;) Я не говорю о ликвидации традиций — ни в коем случае. Наоборот, я хочу помочь эти традиции улучшить или трансформировать в пространстве XXI века. Если вам близка моя позиция, то самое время узнать меня ближе!
-                    p.section__desc Поэтому знайте, что выбор ведущего — это вопрос контакта и комфорта, а этого не передаст ни одна высокоскоростная технология.
-                    a.btn.btn_size_big(href="#") Написать Анне
 
-    section.section
-        .container(data-aos="fade-up")
-            .about__rewards-content
-                .about__rewards-list
-                    p.title.section__title.about__rewards-title Награды и заслуги
-                    .about__rewards-slider
-                        .about__rewards-item(data-number="1") Продюсер в телепередаче «Доброе утро» на Федеральном канале «Россия 1», участница жюри городских конкурсов и фестивалей
-                        .about__rewards-item(data-number="2") Продюсер в телепередаче «Доброе утро» на Федеральном канале «Россия 1», участница жюри городских конкурсов и фестивалей
-                        .about__rewards-item(data-number="3") Продюсер в телепередаче «Доброе утро» на Федеральном канале «Россия 1», участница жюри городских конкурсов и фестивалей
-                        .about__rewards-item(data-number="4") Продюсер в телепередаче «Доброе утро» на Федеральном канале «Россия 1», участница жюри городских конкурсов и фестивалей
-                        .about__rewards-item(data-number="5") Продюсер в телепередаче «Доброе утро» на Федеральном канале «Россия 1», участница жюри городских конкурсов и фестивалей
-                .about__facts-photos
-                    img(src="img/rewards-1.png" alt)
-                    img(src="img/rewards-2.png" alt)
-                    img(src="img/rewards-3.png" alt)
-                    img(src="img/rewards-4.png" alt)
 
-    section.section.section_type_gradient.about__thanks
+    section.section.services__process
         .container(data-aos="fade-up")
-            p.subtitle.section__subtitle Признание - это…
-            .title.section__title Благодарственные письма
-            .grid.about__thanks-slider
-                - for (var i = 0; i < 8; i++) {
-                .grid__item.grid__item_25
-                    img(src="img/letter.png" alt="letter")
-                - }
+            p.subtitle Все просто и прозрачно!
+            p.title.section__title Как мы работаем?
+
+            .grid
+                .grid__item.grid__item_20
+                    .process__step 1
+                    .process__header
+                        img.process__img(src="img/call.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Звонок
+                    p.process__desc Вы оставляете заявку, созваниваемся
+                .grid__item.grid__item_20
+                    .process__step 2
+                    .process__header
+                        img.process__img(src="img/meeting.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Встреча
+                    p.process__desc Мы встречаемся и обсуждаем Ваше Мероприятие
+                .grid__item.grid__item_20
+                    .process__step 3
+                    .process__header
+                        img.process__img(src="img/party.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Предложение
+                    p.process__desc Разрабатываем и отправляем Вам идеи по Мероприятию, тайминг
+                .grid__item.grid__item_20
+                    .process__step 4
+                    .process__header
+                        img.process__img(src="img/doc.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Договор
+                    p.process__desc Заключаем максимально простой и понятный для Вас договор
+                .grid__item.grid__item_20
+                    .process__step 5
+                    .process__header
+                        img.process__img(src="img/money.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Предоплата
+                    p.process__desc Вы вносите предоплату по Договору в размере 25 %
+                .grid__item.grid__item_20
+                    .process__step 6
+                    .process__header
+                        img.process__img(src="img/brain.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Работа
+                    p.process__desc Написание эксклюзивного сценария, подготовка к Мероприятию
+                .grid__item.grid__item_20
+                    .process__step 7
+                    .process__header
+                        img.process__img(src="img/like.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Согласование
+                    p.process__desc Уточняем все  организационные моменты,  детали и нюансы
+                .grid__item.grid__item_20
+                    .process__step 8
+                    .process__header
+                        img.process__img(src="img/camera.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Техническая подготовка
+                    p.process__desc и инструктаж подрядчиков (фотографы, операторы, официанты)
+                .grid__item.grid__item_20
+                    .process__step 9
+                    .process__header
+                        img.process__img(src="img/vision.svg" alt)
+                        img.process__arrow(src="img/arrow-big.svg" alt)
+                    p.heading Контроль
+                    p.process__desc Приезжаем на площадку за 1,5 -2 ч до начала Вашего мероприятия, чтобы еще раз все проверить
+                .grid__item.grid__item_20
+                    .process__step 10
+                    .process__header
+                        img.process__img(src="img/holiday.svg" alt)
+                    p.heading Ваше незабываемое торжество
+                    p.process__desc Блестяще реализуем Ваше Мероприятие
 
     section.section(style="background-image: url('img/contact-bg.png')")
         .container(data-aos="fade-up")
@@ -77,4 +106,13 @@ block container
 
                     .grid__item.grid__item_30.centered
                         button.btn.btn_size_big.btn_solid Отправить заявку
+
+    section.section.services__info
+        .container
+            p.section__desc.bold Заказать организацию свадьбы
+            p.section__desc В современной России свадьба обычно совпадает с государственной регистрацией брака. Если совершается обряд венчания, то он возможен только при наличии свидетельства о регистрации брака из государственных органов. В то же время свадьба — это больше, чем просто бракосочетание, это ещё и цикл знаменательных обрядов (в русской свадьбе: свадебный поезд, свадебный пир, выкуп невесты и тому подобное). В наши дни в России свадьба впитала в себя обычаи многих народов, однако для неё также остались характерны и самобытные обряды.
+            p.section__desc Со временем появляются новые традиции. Так, например, появилась традиция первого танца молодожёнов. Музыкальную композицию для своего первого танца молодожёны либо выбирают сами, либо танцуют под песню, предложенную ведущим. Многие пары готовятся к танцу заранее.
+            p.section__desc Белорусская народная свадьба (белор. Вяселле), как обычай, имеет много общего со свадьбами других славянских народов. Всё начинается со сватовства. Родные жениха посылали сватов к родителям невесты с просьбой выйти замуж. Далее, спустя одну-две недели после сватовства, следовали смотрины: родители невесты осматривали хату и хозяйство родителей жениха, ибо туда после замужества отправится дочь. Накануне свадьбы у невесты устраивали девичник: приходили её подруги, родня, невесту наряжали, заплетали ей косу, плели венки и пели песни. Далее ещё один из этапов свадебного действа — посад, во время которого жениха и невесту сажали на дежу, покрытую кожухом (символ достатка), невесте прижигали волосы свечой.
+            p.section__desc Наконец, за невестой приезжали друзья жениха, начинался праздничный обед в доме невесты, дележ каравая и одаривание молодых. После всего этого свадебный поезд со сватами и дружками отправлялся в дом жениха.
+
     include include/footer

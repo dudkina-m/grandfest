@@ -4,6 +4,11 @@
   align-items: center;
   display: flex;
 
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    display: none;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-right: 25px;
