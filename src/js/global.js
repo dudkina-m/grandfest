@@ -83,6 +83,43 @@ function sliderInit() {
         cssEase: 'linear',
         arrows: false
     });
+
+    $('.about__rewards-slider').slick({
+        prevArrow: "<button type='button' class='slick-prev'></button>",
+        nextArrow: "<button type='button' class='slick-next'></button>",
+        dots: true
+    });
+
+    $('.about__thanks-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 }
 
 function dropdownShow() {

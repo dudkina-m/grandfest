@@ -1,0 +1,264 @@
+@import "../global";
+
+.about {
+
+  &__top-panel {
+    height: 720px;
+    background: url("/img/about-top-bg.png") center no-repeat !important;
+    display: flex;
+    flex-direction: column;
+
+    .top-panel__title {
+      max-width: 595px;
+      transform: translateX(80%);
+
+      .title {
+        font-size: 115px;
+        line-height: 108px;
+      }
+    }
+
+    .top-panel__text {
+      max-width: 490px;
+      transform: translateX(120%);
+      margin-top: 60px;
+
+      .section__desc {
+        text-align: left;
+      }
+    }
+  }
+
+  &__facts {
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title {
+      margin: 0 !important;
+    }
+
+    &-list {
+      max-width: 620px;
+    }
+
+    &-item {
+      margin-top: 30px;
+      position: relative;
+      padding-left: 42px;
+      display: flex;
+      font-size: 18px;
+      line-height: 24px;
+      font-style: italic;
+      color: #808080;
+
+      &:before {
+        content: url("/img/check.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-photos {
+      margin-left: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 490px;
+
+      img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        padding: 0 5px 10px 5px;
+      }
+    }
+  }
+
+  &__biography {
+
+    &-content {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: -90px;
+        left: -20%;
+      }
+    }
+
+    &-desc {
+      max-width: 490px;
+
+      .section__desc {
+        text-align: left;
+      }
+
+      .btn {
+        max-width: 245px;
+        margin-top: 36px;
+      }
+    }
+  }
+
+  &__rewards {
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-list {
+      max-width: 600px;
+    }
+
+    &-title {
+      text-align: center;
+    }
+
+    &-slider {
+      display: flex !important;
+      justify-content: center;
+      margin-top: 30px;
+      align-items: center;
+
+      .slick-list {
+        padding-top: 40px;
+      }
+
+      .slick-arrow {
+        border: 0;
+        width: 24px;
+        height: 20px;
+        background: transparent no-repeat center;
+        padding: 0 15px;
+      }
+
+      .slick-prev {
+        background-image: url("/img/arrow-left-white.svg");
+      }
+
+      .slick-next {
+        background-image: url("/img/arrow-right-white.svg");
+      }
+
+      .slick-dots {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        bottom: -50px;
+
+        .slick-active {
+          button {
+            opacity: 1;
+          }
+        }
+
+        li {
+          margin-right: 18px;
+
+          button {
+            background-color: #d82121;
+            border: 0;
+            border-radius: 50%;
+            color: transparent;
+            height: 12px;
+            opacity: .35;
+            width: 12px;
+          }
+        }
+      }
+    }
+
+    &-item {
+      width: 440px !important;
+      height: 204px;
+      background-color: #212121;
+      font-size: 16px;
+      line-height: 20px;
+      color: #808080;
+      display: flex !important;
+      align-items: center;
+      padding: 0 40px;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+
+      &:before {
+        content: attr(data-number);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-color: #212121;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-photos {
+      margin-left: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 490px;
+
+      img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        padding: 0 5px 10px 5px;
+      }
+    }
+  }
+
+  &__thanks {
+    .title, .subtitle {
+      text-align: center;
+    }
+
+    &-slider {
+      img {
+        max-height: 370px;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .slick-dots {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .slick-active {
+          button {
+            opacity: 1;
+          }
+        }
+
+        li {
+          margin-right: 18px;
+
+          button {
+            background-color: #d82121;
+            border: 0;
+            border-radius: 50%;
+            color: transparent;
+            height: 12px;
+            opacity: .35;
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+}
