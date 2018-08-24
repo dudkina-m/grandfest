@@ -94,9 +94,18 @@
 
 .services {
   &__btn {
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto 0;
     width: 522px;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+
+      .btn {
+        height: max-content;
+        padding: 5px 0;
+        text-align: center;
+      }
+    }
   }
 
   &__reason-content {
@@ -109,6 +118,10 @@
       left: 0;
       position: absolute;
       width: 514px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
@@ -128,6 +141,10 @@
         display: block;
         height: 72px;
         margin-top: 20px;
+
+        @media screen and (max-width: 767px) {
+          height: max-content;
+        }
       }
     }
   }

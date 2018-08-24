@@ -4,6 +4,15 @@
   &__section {
     min-height: 650px;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+      background-image: radial-gradient(670.03px at 29.92% 100%, #404040 0%, #212121 100%) !important;
+      min-height: max-content;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      min-height: 500px;
+    }
   }
 
   &__content {
@@ -11,6 +20,14 @@
     max-width: 400px;
     position: absolute;
     top: 55px;
+
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      top: 0;
+    }
   }
 
   &__title {

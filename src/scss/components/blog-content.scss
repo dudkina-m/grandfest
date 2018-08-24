@@ -60,8 +60,8 @@
     white-space: nowrap;
 
     @media screen and (max-width: 767px) {
-      white-space: normal;
       font-size: 20px;
+      white-space: normal;
     }
   }
 }
@@ -93,8 +93,8 @@
       object-fit: cover;
 
       @media screen and (max-width: 1023px) {
-        width: 100px;
         height: 80px;
+        width: 100px;
       }
     }
 

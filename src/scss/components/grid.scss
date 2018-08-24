@@ -8,6 +8,10 @@
     padding: 0 12.5px 25px 12.5px;
     width: 50%;
 
+    @media screen and (max-width: 767px) {
+      width: 100% !important;
+    }
+
     &_25 {
       width: 25%;
     }
