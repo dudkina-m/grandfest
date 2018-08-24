@@ -1,0 +1,52 @@
+@import '../global';
+
+.mobile-menu {
+  background-color: #212121;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: absolute;
+  top: 100%;
+  transition: max-height .5s ease-out;
+  width: 100%;
+
+  &.open {
+    max-height: 600px;
+    overflow: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__contact {
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+
+    .contact__item {
+      margin-right: 10px;
+    }
+  }
+
+  &__write-us {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    label {
+      font-size: 11px;
+      margin-top: 6px;
+      opacity: .75;
+    }
+  }
+
+  &__nav-menu {
+    margin-bottom: 15px;
+
+    .nav-menu__item {
+      margin-top: 10px;
+    }
+  }
+}

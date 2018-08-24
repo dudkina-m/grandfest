@@ -36,6 +36,10 @@ body {
 .title {
   font-size: 55px;
   font-weight: 700;
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
 }
 
 .divider {
@@ -48,6 +52,11 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 24px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .slider-arrow {

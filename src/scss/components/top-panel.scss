@@ -18,9 +18,9 @@
       height: max-content;
       margin: 36px auto 0;
 
-      @media screen and (max-width: 1280px) {
+      @media screen and (max-width: 1279px) {
         margin: 0;
-        padding: 20px 0;
+        padding: 15px;
       }
     }
   }
@@ -44,6 +44,12 @@
       position: absolute;
       transform: translateX(-50%);
       width: 100%;
+
+      @media screen and (max-width: 767px) {
+        bottom: 15px;
+        justify-content: center;
+        max-width: 100%;
+      }
 
       .slick-active {
         button {

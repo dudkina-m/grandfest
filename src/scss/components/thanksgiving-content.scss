@@ -5,8 +5,20 @@
     .grid {
       margin: 40px -15px 0;
 
+      @media screen and (max-width: 500px) {
+        margin: 40px 0 0;
+      }
+
       .grid__item {
         padding: 0 15px 30px 15px;
+
+        @media screen and (max-width: 500px) {
+          width: 100% !important;
+        }
+
+        @media screen and (max-width: 767px) {
+          width: 50%;
+        }
       }
     }
   }
@@ -15,17 +27,34 @@
     align-items: center;
     display: flex;
 
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
     span {
       white-space: nowrap;
+
+      @media screen and (max-width: 767px) {
+        white-space: normal;
+      }
     }
 
     .divider {
       margin: 0 30px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     .btn {
       font-size: 14px;
       max-width: 170px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+        max-width: 100%;
+      }
     }
   }
 

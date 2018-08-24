@@ -18,9 +18,18 @@
       flex-wrap: nowrap;
     }
 
+    @media screen and (max-width: 1279px) {
+      display: block;
+      white-space: normal;
+    }
+
     .divider {
       margin: 0 30px;
       max-width: 100px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      display: none;
     }
   }
 

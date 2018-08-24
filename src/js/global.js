@@ -2,7 +2,23 @@ $(function () {
     sliderInit();
     AOS.init();
     modalDisplay();
+    toggleMenu();
 });
+
+function toggleMenu() {
+    $(".btn__menu").click(function (e) {
+        e.preventDefault();
+        $(".mobile-menu").toggleClass("open");
+    });
+
+    $(document).mouseup(function (e) {
+        if (!$(".mobile-menu").is(e.target)
+            && $(".mobile-menu").has(e.target).length === 0)
+        {
+            $(".mobile-menu").removeClass("open");
+        }
+    });
+}
 
 function mapInit() {
     var map;
@@ -69,7 +85,6 @@ function sliderInit() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
                 }
             }
         ]

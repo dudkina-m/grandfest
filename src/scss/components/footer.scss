@@ -7,14 +7,31 @@
     margin-top: 96px;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: column;
+      margin-top: 30px;
+      position: relative;
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: 1023px) {
+      position: absolute;
+      right: 0;
     }
   }
 
   &__nav {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 30px;
+    }
   }
 
   &__nav-item {
@@ -33,6 +50,11 @@
 
     &:last-child {
       margin-left: 30px;
+
+      @media screen and (max-width: 500px) {
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
     }
   }
 
@@ -51,6 +73,15 @@
     margin-top: 66px;
     width: 100%;
 
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-top: 30px;
+    }
+
     span {
       color: rgba(255, 255, 255, .5);
       font-size: 16px;
@@ -60,9 +91,18 @@
   &__contacts {
     min-width: 456px;
 
+    @media screen and (max-width: 1023px) {
+      margin-top: 30px;
+      min-width: 100%;
+    }
+
     &-list {
       display: flex;
       margin: 10px 0 20px;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
     }
 
     &-item {
@@ -85,6 +125,10 @@
 
       &:last-child {
         margin-left: 37px;
+
+        @media screen and (max-width: 767px) {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -100,6 +144,10 @@
       li {
         padding: 0 6px 10px 6px;
         width: 50%;
+
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
   }

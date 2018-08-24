@@ -11,24 +11,24 @@
   }
 
   &__desc {
-    font-size: 13px;
-    line-height: 15px;
     color: #808080;
+    font-size: 13px;
     font-weight: 500;
+    line-height: 15px;
     margin-top: 15px;
   }
 
   &__step {
-    position: absolute;
+    align-items: center;
     background-color: #121212;
-    width: 28px;
-    height: 28px;
-    z-index: 3;
+    border: 0;
     border-radius: 50%;
     color: #d82121;
     display: flex;
-    align-items: center;
+    height: 28px;
     justify-content: center;
-    border: 0;
+    position: absolute;
+    width: 28px;
+    z-index: 3;
   }
 }
