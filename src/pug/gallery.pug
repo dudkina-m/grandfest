@@ -28,14 +28,14 @@ block container
                     a.active(href="#") Все материалы
                     a(href="#") Только фото
                     a(href="#") Только видео
-                .gallery
+                .gallery#lightgallery
                     -for (var i = 0; i < 11; i++) {
-                        .img__container(data-src="img/gallery-photo.png" data-sign="image 1")
-                            img(src="img/gallery-photo.png" alt)
+                        a.img__container(href="img/gallery-photo.png")
+                            img(src="img/gallery-photo.png" alt="Подпись к фото")
                             .img__overlay
                                 span Увеличить фото
                     -}
-                    .img__container.img__container_type_video(data-src="img/video-stop.png" data-sign="hello everybody")
+                    .img__container.img__container_type_video(data-poster="img/video-stop.png" data-sub-html="hello everybody" data-html="#video1")
                        img(src="img/video-stop.png" alt)
                        .img__overlay
                             span Видео
@@ -44,6 +44,7 @@ block container
 
 
     include include/footer
-
-    .lightbox__container
-        +lightbox("photo-1", "img/gallery-photo.png", "Подпись к фото")
+    #video1(style='display:none;')
+        video.lg-video-object.lg-html5(controls preload='none')
+            source(src='mov_bbb.mp4', type='video/mp4')
+            |          Your browser does not support HTML5 video.

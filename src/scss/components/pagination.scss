@@ -10,6 +10,13 @@
     &:first-child {
       margin-left: 0;
     }
+
+    &:nth-child(6),
+    &:nth-child(7) {
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
   }
 
   &__btn {
@@ -24,6 +31,11 @@
     height: 48px;
     justify-content: center;
     width: 60px;
+
+    @media screen and (max-width: 767px) {
+      height: 30px;
+      width: 30px;
+    }
 
     &.active,
     &:hover {

@@ -4,6 +4,14 @@
   &__content {
     max-width: 850px;
     width: 100%;
+
+    @media screen and (max-width: 1279px) {
+      max-width: 70%;
+    }
+
+    @media screen and (max-width: 1023px) {
+      max-width: 100%;
+    }
   }
 
   &__photo {
@@ -13,6 +21,16 @@
     width: 100%;
 
     object-fit: cover;
+
+    @media screen and (max-width: 1023px) {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 400px;
+
+      object-position: center top;
+    }
   }
 
   &__subtitle {
@@ -41,9 +59,24 @@
     display: flex;
     margin-top: 24px;
 
+    @media screen and (max-width: 1279px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     .btn {
       border-color: rgba(255, 255, 255, .1);
       margin: 0 6px;
+
+      @media screen and (max-width: 1279px) {
+        margin: 6px 0;
+        width: 45%;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin: 6px 0;
+        width: 100%;
+      }
 
       &:first-child {
         margin-left: 0;

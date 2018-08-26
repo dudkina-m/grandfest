@@ -11,6 +11,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 25px;
+
+      @media screen and (min-width: 900px) and (max-width: 1279px) {
+        margin-right: 10px;
+      }
     }
   }
 

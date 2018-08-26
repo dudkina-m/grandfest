@@ -3,16 +3,55 @@ extends root/layout
 block container
     include include/header
 
-    section.section.section_type_gradient
+    section.section.section_type_gradient.service-page__top-panel
         .container(data-aos="fade-up")
+            .service-page__top-panel-content
+                p.title.section__title Свадебные торжества
+                .service-page__top-panel-desc
+                    p Свадьба - самое романтичное событие в жизни любой пары. Появление новой семьи, яркие эмоции и чувства, поздравления и подарки – непременные атрибуты этого замечательного дня. Часто многие молодожёны берут организацию такого важного праздника на себя, тратят огромное количество энергии и сил и, как результат, не могут полностью
+                    p А какой видите её Вы? Скорее всего, яркой, незабываемой, не такой, как у всех. Существует мнение, что для организации классной свадьбы нужен большой бюджет. Однако мы считаем, что превосходный праздник зависит в большей степени от уровня подготовки.
+                    p И наше праздничное агентство обеспечит наивысший уровень качества и подготовки Вашей свадьбы.
+                    p Свадьба - самое романтичное событие в жизни любой пары. Появление новой семьи, яркие эмоции и чувства, поздравления и подарки – непременные атрибуты этого замечательного дня. Часто многие молодожёны берут организацию такого важного праздника на себя, тратят огромное количество энергии и сил и, как результат, не могут полностью
+                    p А какой видите её Вы? Скорее всего, яркой, незабываемой, не такой, как у всех. Существует мнение, что для организации классной свадьбы нужен большой бюджет. Однако мы считаем, что превосходный праздник зависит в большей степени от уровня подготовки.
+                    p И наше праздничное агентство обеспечит наивысший уровень качества и подготовки Вашей свадьбы.
+                a.btn.btn_size_big(href="#") Узнать стоимость
 
 
-    section.section
+    section.section.section_type_gradient.gallery__section
+        .container(data-aos="fade-up").gallery__container
+            .aside.gallery__aside.service-page__aside
+                p.title.section__title Галерея свадеб
+                p.aside__text Текст о том, какие бывают приключения на свадьбах и почему там так весело. Ведущая чувствует публику и атмосферу и понимает, в какой момент нужны активности, а когда нужно отойти в сторону и предоставить гостей самим себе. Опыт работы на ТВ научил правильно ставить голос, работать со своей.
+                p.aside__text Интонацией и интенсивностью, чтобы всем слушателям было комфортно и приятно слушать ведущую.
+                a.btn(href="#") Перейти в галерею
+            .gallery__content
+                .gallery__materials
+                    a.active(href="#") Все материалы
+                    a(href="#") Только фото
+                    a(href="#") Только видео
+                .gallery
+                    -for (var i = 0; i < 5; i++) {
+                    .img__container(data-src="img/gallery-photo.png" data-sign="image 1")
+                        img(src="img/gallery-photo.png" alt)
+                        .img__overlay
+                            span Увеличить фото
+                    -}
+                    .img__container.img__container_type_video(data-src="img/video-stop.png" data-sign="hello everybody")
+                        img(src="img/video-stop.png" alt)
+                        .img__overlay
+                            span Видео
+
+                a.btn.btn_size_middle.btn_border_light(href="#") Загрузить ещё
+
+
+    section.section.service-page__purpose-section
         .container(data-aos="fade-up")
-
-
-    section.section.section_type_gradient
-        .container(data-aos="fade-up")
+            .service-page__purpose-content
+                p.title.section__title При заказе свадьбы - декор зала в подарок
+                p.section__desc Наши веранды прекрасно подойдут для фуршетного стола, а красивая территория с видом на лес для выездной регистрации и фото зон!
+                .service-page__purpose-btn
+                    a.btn.btn_solid.btn_size_big(href="#") Принять участие в акции
+                    span.btn__label Акция действительна до 16.08.2018
 
 
     section.section.services__process

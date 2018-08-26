@@ -14,9 +14,8 @@ block container
                         p.slider__text Нет скучным свадьбам! Все, что скажет ваша бабушка про ненадкусанный каравай, будет сказано потом. Вместе создадим на свадьбе новые традиции, сделаем то, чего не было на торжествах родственников, устроим исключительно ваш день и ваш праздник! Пусть его оправдает даже самая консервативная бабушка ;)
                         .slider__actions
                             a.btn.btn_size_big(href="#") Услуги агенства
-                            a.btn__promo(href="#") Смотреть #[br] промо-видео
+                            a.btn__promo(id="promo" data-html="#video1") Смотреть #[br] промо-видео
             - }
-
     section.section.section_type_gradient.leading-content__section
         .leading-content
             .container(data-aos="fade-up")
@@ -193,3 +192,8 @@ block container
                 img(src="img/partner-3.png" alt)
                 img(src="img/partner-4.png" alt)
     include include/footer
+
+    #video1(style='display:none;')
+        video.lg-video-object.lg-html5(controls preload='none')
+            source(src='mov_bbb.mp4', type='video/mp4')
+            |          Your browser does not support HTML5 video.

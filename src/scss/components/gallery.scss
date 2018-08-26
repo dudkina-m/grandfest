@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   margin: 30px -10px 0;
 
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
   .img__container {
     @include transition();
 
@@ -14,9 +18,18 @@
     position: relative;
     width: 33.333333%;
 
+    @media screen and (max-width: 1023px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+
     &_type_video {
       .img__overlay {
-        background: rgba(0, 0, 0, .55);
+        background: linear-gradient(360deg, rgba(0, 0, 0, .7) 12.91%, rgba(0, 0, 0, .0001) 37.76%);
+        opacity: 1;
 
         span {
           align-items: center;
@@ -69,13 +82,27 @@
 
   &__container {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__content {
     margin-left: 60px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
   }
 
   &__aside {
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
     .title {
       line-height: 1;
       margin-top: 0;

@@ -33,6 +33,8 @@ gulp.task('build-css', () => {
         `${sourceDirectory}css/reset.css`,
         `${nodeModulesDirectory}slick-carousel/slick/slick.css`,
         `${nodeModulesDirectory}aos/dist/aos.css`,
+        `${nodeModulesDirectory}malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css`,
+        `${nodeModulesDirectory}lightgallery/dist/css/lightgallery.css`
     ]
     .concat(getPluginsPaths('css')))
     .pipe($.plumber())
@@ -60,6 +62,9 @@ gulp.task('build-js', () => {
         `${sourceDirectory}js/components/*.js`,
         `${nodeModulesDirectory}slick-carousel/slick/slick.js`,
         `${nodeModulesDirectory}aos/dist/aos.js`,
+        `${nodeModulesDirectory}malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js`,
+        `${nodeModulesDirectory}lightgallery/dist/js/lightgallery.min.js`,
+        `${nodeModulesDirectory}lightgallery/dist/js/lightgallery-all.min.js`
     ])
         .pipe($.plumber())
         .pipe($.concat('script.js'))
