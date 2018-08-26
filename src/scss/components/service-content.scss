@@ -2,7 +2,7 @@
 
 .service-content {
   &__section {
-    background: url('/img/oval-bg.png') center no-repeat;
+    background: url('../img/oval-bg.png') center no-repeat;
 
     @media screen and (max-width: 1023px) {
       background: radial-gradient(670.03px at 29.92% 100%, #404040 0%, #212121 100%);
@@ -63,10 +63,21 @@
   &__item {
     @include transition();
 
-    background: linear-gradient(207.95deg, rgba(0, 0, 0, .0001) 34.35%, rgba(0, 0, 0, .55) 70.4%) center no-repeat;
+    background: center no-repeat;
+    background-size: cover;
     display: block;
     height: 360px;
     position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(207.95deg, rgba(0, 0, 0, .0001) 34.35%, rgba(0, 0, 0, .55) 70.4%);
+      top: 0;
+      left: 0;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -78,6 +89,7 @@
       font-weight: 700;
       left: 24px;
       position: absolute;
+      z-index: 3;
     }
   }
 
@@ -179,7 +191,7 @@
 
 .service-page {
   &__top-panel {
-    background: url('/img/service-top-bg.png') center no-repeat;
+    background: url('../img/service-top-bg.png') center no-repeat;
     height: 720px;
 
     @media screen and (max-width: 767px) {
@@ -231,7 +243,7 @@
   }
 
   &__purpose-section {
-    background: url('/img/purpose-bg.png') center no-repeat;
+    background: url('../img/purpose-bg.png') center no-repeat;
     padding: 80px 0 !important;
 
     @media screen and (max-width: 1279px) {

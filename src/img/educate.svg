@@ -1,9 +1,9 @@
-<svg width="60" height="73" viewBox="0 0 60 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="72.8571" fill="black" fill-opacity="0"/>
-    <path d="M57.7173 27.4671L29.7973 10.124L1.90186 27.4526L29.7973 45.2909L57.7173 27.4671Z" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M11.25 36.9346V54.137C11.25 54.137 18.75 64.762 29.5833 64.762C40.4167 64.762 47.9167 54.137 47.9167 54.137V36.9346" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M54.5833 52.113H52.9167C52.9167 52.113 50.8941 55.2796 51.1299 57.8562C51.3656 60.4328 52.514 61.2202 53.75 61.2202C54.986 61.2202 56.0379 59.8235 56.218 57.8562C56.398 55.8889 54.5833 52.113 54.5833 52.113Z" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M53.75 52.1132V32.887" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M14.5833 40.9822V52.6191" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M32.0833 38.4523L50 26.8154" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="72" height="72" fill="black" fill-opacity="0"/>
+    <path d="M69.2607 27.144L35.7568 10.005L2.28223 27.1297L35.7568 44.7581L69.2607 27.144Z" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13.5 36.5V53.5C13.5 53.5 22.5 64 35.5 64C48.5 64 57.5 53.5 57.5 53.5V36.5" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M65.5001 51.5H63.5001C63.5001 51.5 61.073 54.6293 61.356 57.1756C61.6389 59.7219 63.0169 60.5 64.5001 60.5C65.9833 60.5 67.2456 59.1198 67.4617 57.1756C67.6777 55.2314 65.5001 51.5 65.5001 51.5Z" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M64.5 51.5V32.5" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.5 40.5V52" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M38.5 38L60 26.5" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

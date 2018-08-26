@@ -2,7 +2,7 @@
 
 .about {
   &__top-panel {
-    background: url('/img/about-top-bg.png') center no-repeat !important;
+    background: url('../img/about-top-bg.png') center no-repeat !important;
     display: flex;
     flex-direction: column;
     height: 720px;
@@ -109,7 +109,7 @@
       position: relative;
 
       &:before {
-        content: url('/img/check.svg');
+        content: url('../img/check.svg');
         left: 0;
         position: absolute;
         top: 0;
@@ -248,11 +248,11 @@
       }
 
       .slick-prev {
-        background-image: url('/img/arrow-left-white.svg');
+        background-image: url('../img/arrow-left-white.svg');
       }
 
       .slick-next {
-        background-image: url('/img/arrow-right-white.svg');
+        background-image: url('../img/arrow-right-white.svg');
       }
 
       .slick-dots {
