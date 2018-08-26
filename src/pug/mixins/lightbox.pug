@@ -1,0 +1,21 @@
+mixin lightbox(id, src, sign)
+    .lightbox(id=id)
+        .lightbox__content
+            //img(src=src alt)
+            video.video(controls)
+                source(src="mov_bbb.mp4" type="video/mp4")
+            .lightbox__close
+            button.lightbox__arrow.lightbox__left
+            button.lightbox__arrow.lightbox__right
+            .lightbox__sign
+                span= sign
+            .lightbox__bottom-panel
+                .lightbox__number
+                    span 3
+                    span /
+                    span 42
+                .lightbox__share
+                    p hello
+                a.lightbox__download(href="#" download)
+
+

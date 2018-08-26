@@ -2,7 +2,7 @@
 
 .partners-content {
   &__section {
-    padding-bottom: 40px !important;
+    padding: 40px 0 !important;
 
     .subtitle {
       text-align: center;
@@ -19,17 +19,16 @@
     }
 
     @media screen and (max-width: 1279px) {
-      display: block;
       white-space: normal;
     }
 
     .divider {
       margin: 0 30px;
       max-width: 100px;
-    }
 
-    @media screen and (max-width: 1279px) {
-      display: none;
+      @media screen and (max-width: 1279px) {
+        display: none;
+      }
     }
   }
 
@@ -50,6 +49,11 @@
     img {
       margin: 0 30px;
       max-width: 200px;
+
+      @media screen and (max-width: 767px) {
+        margin: 0;
+        max-width: 150px;
+      }
     }
 
     .slick-arrow {
