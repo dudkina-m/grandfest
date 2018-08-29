@@ -8,7 +8,7 @@
     margin-top: 24px;
   }
 
-  &__text {
+  p {
     color: rgba(255,255,255,.5);
     font-size: 13px;
     margin-top: 24px;
@@ -22,14 +22,14 @@
   }
 
   &__subtitle {
-    font-size: 16px;
     font-weight: 700;
-    margin-top: 24px;
+    color: #fff !important;
   }
 
   &__list {
-    li.aside__text {
+    li {
       margin-top: 15px;
+      color: #808080;
     }
   }
 }

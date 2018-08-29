@@ -49,6 +49,32 @@
     flex-direction: column;
     padding: 52px 24px 24px;
     position: relative;
+
+    p {
+      color: #808080;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: left;
+      margin-top: 10px;
+
+      &.review__name {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      &.review__date {
+        font-size: 14px;
+        line-height: 18px;
+        color: #9b9b9b;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
   }
 
   &__photo {
@@ -61,16 +87,6 @@
     top: 0;
     transform: translate(-50%, -50%);
     width: 72px;
-  }
-
-  &__name {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  &__date {
-    color: #9b9b9b;
-    margin-top: 15px;
   }
 
   &__social-link {

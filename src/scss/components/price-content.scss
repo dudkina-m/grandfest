@@ -34,11 +34,13 @@
     font-weight: 500;
     letter-spacing: -.19px;
     line-height: 15px;
+    margin-top: 10px;
   }
 
   &__caption {
     font-size: 16px;
     line-height: 20px;
+    color: #fff;
   }
 
   &__list {
@@ -78,6 +80,7 @@
         .price-content__table-cell {
           p.heading {
             margin-bottom: 10px;
+            color: #fff;
           }
         }
       }

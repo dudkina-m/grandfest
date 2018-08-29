@@ -11,6 +11,12 @@ body {
   width: 100%;
 }
 
+p {
+  color: #808080;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 .content {
   flex-grow: 1;
   width: 100%;
@@ -31,11 +37,13 @@ body {
   margin-bottom: 10px;
   opacity: .5;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .title {
   font-size: 55px;
   font-weight: 700;
+  color: #fff;
 
   @media screen and (max-width: 767px) {
     font-size: 32px;
@@ -52,6 +60,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 24px;
+  color: #fff;
 
   @media screen and (max-width: 767px) {
     font-size: 16px;

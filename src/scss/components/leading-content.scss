@@ -1,7 +1,6 @@
 @import '../global';
 
 .leading-content {
-
   @media screen and (max-width: 1279px) {
     background-image: none;
     min-height: max-content;
@@ -9,8 +8,8 @@
   }
 
   &__section {
-    padding: 0 !important;
     height: 888px;
+    padding: 0 !important;
 
     @media screen and (max-width: 1279px) {
       height: max-content;

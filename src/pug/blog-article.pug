@@ -4,44 +4,44 @@ block container
     include include/header
 
     section.section.section_type_gradient.blog__section
-        .container(data-aos="fade-up")
+        .container(data-aos='fade-up')
             .blog__container
                 .blog__content.article__content
-                    p.title.section__title Как Собчак учила жизни минчан
-                    p.blog__item-date 20.07.2018
-                    p.article__text Лошицкий парк. 11 августа. 12:00. Именно с полудня начинает свою работу третий А-Fest. Это крупный и бесплатный оупен-эйр в живописной локации. Хедлайнером заявлена британская поп-певица Софи Эллис-Бекстор. Она начнет петь в 21:30. Но до нее будет много всего движового. Организаторы предлагают полный расклад, чтобы было понятно, чего ожидать.
-                    img.article__photo(src="img/blog-photo.png" alt="")
-                    p.heading.article__subtitle Активности
-                    p.article__text — В этом году на фестивале будет около 30 развлекательных зон. Можно будет поучаствовать в «скачках» и проверить свои знания белорусского языка. Из спортивных игр будут футбол, необычный вариант игры «Крестики-нолики», эстафета с #[a(href="#") полосой препятствий] на пивную тематику. Кроме подвижных развлечений, будут еще и интеллектуальные: «мозгобойня», «пивное» домино, игра в кости и другие. Для любителей красочных снимков и ярких селфи мы подготовили 5 фотозон, — говорят устроители.
-                    p.heading.article__subtitle Входы, туалеты, погодный апокалипсис
-                    p.article__text — Лошицкий парк — живописное место, и в случае жары гости смогут расположиться на траве в тени деревьев, а также в зонах фуд-корта под большими зонтами, которые помогут укрыться и от дождя. Учитывая опыт других фестивалей, будет организовано торговое место с продажей дождевиков. Конечно, мы рекомендуем всем гостям подготовиться к походу на фестиваль заранее и взять с собой головные уборы и зонты, чтобы быть готовыми к любой погоде.
-                    .article__slider
-                        -for (var i = 0; i < 5; i++) {
-                            img.article__photo(src="img/blog-photo.png" alt="")
-                        -}
-                    p.heading.article__subtitle Как добраться
-                    p.article__text На городском транспорте: до Лошицкого парка от остановки возле Центрального железнодорожного вокзала автобусами №102, 123; также автобусами №2c, 52, 65, 124, 191, троллейбусами №6, 24, 5 и маршрутными такси.
+                    h1.title.section__title Статья 1
+                    p.article__date 20.07.2018
+                    h2 What is Lorem Ipsum?
+                    p
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    h2 Why do we use it?
+                    p
+                        | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    p
+                        img(alt='', src='img/gallery-photo.png')
+                    h2 Where does it come from?
+                    p
+                        | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     .article__footer
                         p.article__text Расскажите друзьям о новости!
                         .article__share
-                            a.btn.btn_size_middle.btn__social(href="#" style="background-image: url('img/vk.svg')") Vkontakte
-                            a.btn.btn_size_middle.btn__social(href="#" style="background-image: url('img/fb.svg')") Facebook
-                            a.btn.btn_size_middle.btn__social(href="#" style="background-image: url('img/ok-ru.svg')") Ok.ru
-                            a.btn.btn_size_middle.btn__social(href="#" style="background-image: url('img/mail.svg')") E-mail
-
-
+                            a.btn.btn_size_middle.btn__social(href='#', style="background-image: url('img/vk.svg')") Vkontakte
+                            a.btn.btn_size_middle.btn__social(href='#', style="background-image: url('img/fb.svg')") Facebook
+                            a.btn.btn_size_middle.btn__social(href='#', style="background-image: url('img/ok-ru.svg')") Ok.ru
+                            a.btn.btn_size_middle.btn__social(href='#', style="background-image: url('img/mail.svg')") E-mail
                 .aside.blog__aside
                     p.aside__subtitle О блоге
-                    p.aside__text Наша стоимость держится в верхнем среднем ценовом диапазоне. Это связано с опытом работы, высоким профессионализмом и качеством мероприятий, подтвержденные рекомендациями топовых компаний Смоленска и отзывами любимых Клиентов.
+                    p.aside__text
+                        | Наша стоимость держится в верхнем среднем ценовом диапазоне. Это связано с опытом работы, высоким профессионализмом и качеством мероприятий, подтвержденные рекомендациями топовых компаний Смоленска и отзывами любимых Клиентов.
                     p.aside__text Выберите ценность своего Праздника.
                     .input__group
-                        input.input(placeholder="Введите ваш е-mail")
+                        input.input(placeholder='Введите ваш е-mail')
                         button.input__btn
                             svg(width='19', height='11', viewBox='0 0 19 11', fill='none', xmlns='http://www.w3.org/2000/svg')
                                 rect(width='19', height='11', fill='black', fill-opacity='0')
                                 path(d='M0.5 5.5H18.5', stroke='#D82121', stroke-linecap='round', stroke-linejoin='round')
                                 path(d='M14.5 0.5L18.5 5.5L14.5 10.5', stroke='#D82121', stroke-linecap='round', stroke-linejoin='round')
-                    p.aside__text Подписываясь на рассылку, вы даёте согласие на обработку #[a.link(href="#") персональных данных]
+                    p.aside__text
+                        | Подписываясь на рассылку, вы даёте согласие на обработку
+                        a.link(href='#') персональных данных
 
     section.section(style="background-image: url('img/contact-bg.png')")
         .container(data-aos="fade-up")
