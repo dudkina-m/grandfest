@@ -9,6 +9,7 @@
   top: 100%;
   transition: max-height .5s ease-out;
   width: 100%;
+  z-index: 30;
 
   &.open {
     max-height: 600px;

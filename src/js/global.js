@@ -25,12 +25,13 @@ $(function () {
 });
 
 function toggleMenu() {
-    $(".btn__menu").click(function (e) {
-        e.preventDefault();
-        $(".mobile-menu").toggleClass("open");
-    });
 
     $(document).mouseup(function (e) {
+      $(".btn__menu").click(function (e) {
+        e.preventDefault();
+        $(".mobile-menu").toggleClass("open");
+      });
+
         if (!$(".mobile-menu").is(e.target)
             && $(".mobile-menu").has(e.target).length === 0) {
             $(".mobile-menu").removeClass("open");

@@ -51,12 +51,16 @@
     position: relative;
 
     p {
-      color: #808080;
+      color: rgba(255,255,255,0.5);
       font-size: 13px;
       font-weight: 500;
       line-height: 16px;
       text-align: left;
       margin-top: 10px;
+
+      & + p {
+        margin-top: 16px;
+      }
 
       &.review__name {
         color: #fff;
