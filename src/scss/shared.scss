@@ -31,19 +31,19 @@ p {
 }
 
 .subtitle {
+  color: #fff;
   font-size: 12px;
   letter-spacing: 6px;
   line-height: 24px;
   margin-bottom: 10px;
   opacity: .5;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .title {
+  color: #fff;
   font-size: 55px;
   font-weight: 700;
-  color: #fff;
 
   @media screen and (max-width: 767px) {
     font-size: 32px;
@@ -57,10 +57,10 @@ p {
 }
 
 .heading {
+  color: #fff;
   font-size: 24px;
   font-weight: 600;
   line-height: 24px;
-  color: #fff;
 
   @media screen and (max-width: 767px) {
     font-size: 16px;
