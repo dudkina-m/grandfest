@@ -3,13 +3,31 @@ $(function () {
     AOS.init();
     modalDisplay();
     toggleMenu();
+    tabsLogic();
 
     $(".service-page__top-panel-desc").mCustomScrollbar({
         theme: "light-thin"
     });
 
     $("#promo").lightGallery({
-        selector: 'this'
+      selector: 'this',
+      thumbnail: false,
+      fullScreen: false,
+      zoom: false,
+      width: '800px',
+      height: '600px',
+      autoplay: false,
+      autoplayControls: false
+    });
+
+    $("#thanks-gallery").lightGallery({
+        autoplay: false,
+        download: false,
+        share: false,
+        thumbnail: false,
+        fullScreen: false,
+        zoom: false,
+        autoplayControls: false
     });
 
     $("#lightgallery").lightGallery({
@@ -23,6 +41,24 @@ $(function () {
     });
 
 });
+
+function tabsLogic() {
+  $('.tab__content').eq(1).hide();
+
+  $('.tab__wrapper').each(function () {
+
+    $(this).find('.tab').click(function () {
+
+      var index = $(this).index();
+
+      $('.tab').removeClass('active');
+      $(this).addClass('active');
+
+      $('.tab__content').hide();
+      $('.tab__content').eq(index).show();
+    });
+  });
+}
 
 function toggleMenu() {
 
