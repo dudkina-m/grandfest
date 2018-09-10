@@ -61,21 +61,13 @@
   }
 
   &__write-us {
-    display: flex;
-    flex-direction: column;
 
     @media screen and (max-width: 767px) {
       display: none;
     }
 
     .btn {
-      max-width: 154px;
-    }
-
-    label {
-      font-size: 11px;
-      margin-top: 6px;
-      opacity: .75;
+      width: 150px;
     }
   }
 }
